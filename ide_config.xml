@@ -1,0 +1,26 @@
+<application>
+
+	<name>Application CFC Generator</name>
+	<author>Kavitha Christo</author>
+	<version>0.2</version>
+	<email>kavitha.nelson@colitsys.com</email>	
+	<description>This extension will allow you to easily create an application component for your project.</description>
+	<license>WTFPL (Do What The Fuck You Want To Public License)</license>
+    
+	<menucontributions>
+		<contribution target="projectview">
+			<menu name="Application CFC Generator">
+				<filters>
+					<filter type="folder" />
+					<filter type="project" />
+				</filters>
+	    		<action name="Generate Application CFC" handlerid="createappcfc" showResponse="true"/>
+			</menu>
+		</contribution>
+    </menucontributions>	
+
+	<handlers>		
+		<handler id="createappcfc" type="CFM" filename="create.cfm" />
+	</handlers>
+
+</application>
